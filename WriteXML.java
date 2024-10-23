@@ -100,7 +100,7 @@ public class WriteXML {
             writer.write(getTotalAmount(transactions,transactionCategory));
             writer.write("</totalAmount>\n");
         }
-        if(transactionCategory.equals(DEBIT)){
+        if(transactionCategory.equals(CREDIT)){
             writer.write("\t\t\t</creditSummary>\n");
         }else {
             writer.write("\t\t\t</debitSummary>\n");
